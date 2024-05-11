@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "lib": ["es2020"],
     "target": "es2020",
     "jsx": "react-jsx",
     "module": "ES2022",
@@ -19,6 +20,11 @@
         "./src/fake-external-lib/component"
       ]
     }
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
   },
   "include": [
     "src"
